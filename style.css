@@ -1,145 +1,120 @@
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #fff0f5;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff0f5; /* Soft pink background */
     color: #333;
 }
 
-/* Header */
+/* Header Styling */
 header {
-    background: #ff69b4;
+    background-color: #ff69b4; /* Vibrant hot pink */
+    color: white;
     padding: 20px;
     text-align: center;
-    color: white;
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background: #ff1493;
+    background-color: #d63384; /* Deep pink */
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    font-size: 18px;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: background 0.3s;
 }
 
 nav a:hover {
-    background: #db7093;
+    background-color: #ff1493; /* Brighter pink */
     border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    padding: 50px;
-    background: url('lashes-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(to right, #ff69b4, #ff1493);
     color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 .hero h1 {
-    font-size: 50px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 20px;
-    margin-top: 10px;
-}
-
-button {
-    background: #ff69b4;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #db7093;
+    opacity: 0.8;
 }
 
 /* Services Section */
 .services {
     padding: 50px;
+    background-color: #ffe4e1; /* Soft blush pink */
     text-align: center;
 }
 
 .services h2 {
-    font-size: 36px;
-    color: #ff1493;
+    color: #d63384;
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-.service-box {
-    display: inline-block;
-    width: 30%;
-    background: white;
+.service-item {
+    background: #fff;
     padding: 20px;
     margin: 10px;
+    display: inline-block;
+    width: 250px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Gallery Section */
-.gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px;
-    background: #fffaf0;
-}
-
-.gallery img {
-    width: 250px;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
     transition: transform 0.3s;
 }
 
-gallery img:hover {
-    transform: scale(1.1);
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item h3 {
+    color: #ff1493;
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 /* Contact Section */
 .contact {
-    text-align: center;
-    padding: 50px;
-    background: #ff69b4;
+    background-color: #ff69b4;
     color: white;
+    padding: 50px;
+    text-align: center;
 }
 
-.contact input, .contact textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
 }
 
-.contact button {
-    background: #fff;
-    color: #ff69b4;
-    font-weight: bold;
+.contact p {
+    font-size: 18px;
+    opacity: 0.9;
 }
 
 /* Footer */
 footer {
-    background: #ff1493;
+    background-color: #d63384;
+    color: white;
     text-align: center;
     padding: 20px;
-    color: white;
 }
 
